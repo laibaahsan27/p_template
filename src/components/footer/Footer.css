@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url("https://fonts.google.com/specimen/Inter?preview.text=recent&preview.text_type=custom&query=inter");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+
+.outer1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.first1{
+    padding: 0 190px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.links{
+    display: flex;
+    color: #637AAA;
+    font-family: 'Inter';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+}
+
+.link-span {
+  margin-left: 5px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.link-span:hover {
+  border-image: linear-gradient(90deg, #040F25, #0CA4E6, #040F25);
+  border-image-slice: 1;
+}
+
+.second1{
+    color: #23488D;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.quatro{
+    display: flex;
+    color: #23488D;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.rights{
+    display: flex;
+    align-items: center;
+}
+a{
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+img{
+    object-fit: contain;
+}
+.logos{
+    object-fit: contain;
+}
+.quatro-link{
+    padding-bottom: 4px;
+}
+
+
+@media (max-width: 480px) {
+.links{
+    font-size: 20px !important;
+  }
+  .logos {
+    width: 21px;
+    height: 21px;
+  }
+  .first1{
+    margin: 0 20px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .second1{
+    font-size: 9.9px ;
+}
+  .quatro{
+    flex-wrap: nowrap ;
+    font-size: 9.9px ;
+  }
+  .rights{
+    margin-top: 20px;
+    margin-left: 5px;
+    display: block ;  
+}
+  .footer-slash{
+    display: none;
+  }
+  .quatro-link{
+    width: 21px;
+    height: 21px;
+  }
+  .link-span{
+    padding: 0;
+  }
+  .line {
+    width: 246.002px;
+    height: 1px;
+    background: radial-gradient(circle at 4.78% 50.47%, #040F25 0%, #637AAA 35.85%, rgba(99, 122, 170, 0.00) 67.10%);
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+  .outer1{
+    margin-top: 90px;
+  }
+  .container{
+    margin-top: 100px;
+  }
+  
+}

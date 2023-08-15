@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.active{
+    /* background-color: #1d4ed8; */
+    color: #637AAA;
+}
+body{
+    background-color: #0f172a;
+}
+nav {
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    position: relative; 
+}
+.link-spann{
+    color: #637AAA;
+    cursor: pointer;
+}
+nav .title {
+    height: 50px;
+    margin : 0 0rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem;
+    margin: 0 0.7rem;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+  }
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 2.25rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.resume{
+    font-size: 20px;
+    font-family: 'Inter';
+    border: none;
+    background-color: #0CA4E6; 
+    border-radius: 0.5rem;
+    color: white;
+    width: 100px;
+    height: 35px;
+    /* padding: 0; */
+}
+.resumeA{
+    padding-top: 0px;
+}
+
+@media (max-width: 480px) {
+    nav {
+        margin: 0;
+        padding: 15px 28px;
+        position: relative; /* Ensure the positioning context remains */
+    }
+
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        background-color: #0f172a; 
+        padding: 1rem; 
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 6.5rem;
+    }
+    .openItems {
+        margin: 1.2rem 0.5rem;
+    }
+    .link-spann {
+        padding-bottom: 0px;
+        margin: 5px auto;
+        width: 100px;
+    }
+    .resume{
+        margin-top: 10px;
+    }
+    .menu.rotate-90 {
+        transform: rotate(90deg) translateX(-3px);
+      }
+}
+
+
+.link-spann {
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.link-spann:hover {
+    border-image: linear-gradient(80deg, #040F25, #0CA4E6, #040F25);
+    border-image-slice: 1;
+}
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 5, 27, 0.382); 
+    z-index: 999;
+}
