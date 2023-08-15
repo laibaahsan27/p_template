@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <Project/>
+      {/* <Project/> */}
       <Last/>
       <Footer/>
     </>
