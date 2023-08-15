@@ -4,7 +4,7 @@ import flower from '../../images/slider thing.png';
 
 const Last = () => {
 
-  const items = ['iot', 'Robotics', 'embedded system', 'image Processing', 'Signal Processing', 'Machine learning'];
+  const items = ['Full Stack Development', 'Web Applications', 'App Development', 'Software Architecture', 'Open Source Contributions', 'Machine learning'];
 
   const list=[
     {
@@ -41,12 +41,8 @@ const Last = () => {
                 </div>
                 <div><span className='third'>{list.third} <br /> </span></div>
                 <div><span className='fourth'>{list.fourth}</span></div>
-                
-                
-                
               </div>
-              
-            
+
           </div>
         )
       }

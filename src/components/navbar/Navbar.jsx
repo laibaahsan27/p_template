@@ -9,6 +9,19 @@ import github from '../../images/github.svg'
 import linkedin from '../../images/linkedin.svg'
 import Hero from '../hero/Hero'
 
+//Enter your resume link here
+const ResumeLink = " "
+
+//Enter your social links here
+const SocialLinks = [
+  {
+    linkedin: " ", 
+    Github: " ",
+    emailID: "mailto: "
+  }
+]
+
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -48,14 +61,14 @@ const Navbar = () => {
             </ScrollLink>
           </li>
           <li>
-            <a className='resumeA' rel='noreferrer' target='_blank' href="https://file.notion.so/f/s/aeac85ee-87e9-4cc7-bdeb-fb5c8841b27a/Pratik_Nikam_Resume.pdf?id=72183e68-5581-4d57-8f91-ce1b8a8089ed&table=block&spaceId=2cf9760a-409c-49b1-9297-36fd6f6b1340&expirationTimestamp=1690761600000&signature=8ZwXCCoNRUIi2KojPs2KVzP-YeeEZf1rMo2fpBPiLMM&downloadName=Pratik_Nikam_Resume.pdf"> <button className="resume"> Resume</button></a>
+            <a className='resumeA' rel='noreferrer' target='_blank' href={ResumeLink}> <button className="resume"> Resume</button></a>
           </li>
           {menuOpen && (
             <li>
               <div style={{display: 'flex', flexDirection: 'row', justifyContent:'center'}}>
-                <a className="openItems" rel='noreferrer' href="https://www.linkedin.com/in/pratik-nikam-83ab9822"><img src={linkedin} alt="" /></a> 
-                <a className="openItems" rel='noreferrer' href="https://github.com/N-Pratik"><img src={github} alt="" /></a> 
-                <a className="openItems" rel='noreferrer' href="mailto:ee21btech11037@iith.ac.in"><img src={mail} alt="" /></a> 
+                <a className="openItems" rel='noreferrer' href={SocialLinks[0].linkedin}><img src={linkedin} alt="" /></a> 
+                <a className="openItems" rel='noreferrer' href={SocialLinks[0].Github}><img src={github} alt="" /></a> 
+                <a className="openItems" rel='noreferrer' href={SocialLinks[0].emailID}><img src={mail} alt="" /></a> 
               </div>
             </li>
             )}
